@@ -2,10 +2,28 @@ html,body {
 	margin:0;
 	padding:0;
 	overflow-x:hidden;
+	background-image: linear-gradient(to bottom right, #b8ffe6, #85f3ff);
+	height: 100%;
+}
+.form-contents{
+	display: flex;
+}
+
+input, textarea{
+	border: none;
+	padding-left: 8px;
+}
+.main-header{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
 }
 form{
-	width: 50%;
+	margin: 30px;
+	width: 380px;
 	padding: 10px;
+	background-image: linear-gradient(to bottom right, #65dfc9, #6cdbeb);
+	border-radius: 20px;
 	
 }
 .first-name-input, .last-name-input, .email-input, .phone-number-input, .date-input, .time-input, .message-input, .submit{
@@ -13,10 +31,21 @@ form{
 	border-radius: 5px;
 	height: 30px;
 	border-color: solid white;
+	text-align: center;
 }
-
+.header-form{
+	color: white;
+	text-align: center;
+}
 .email-input, .phone-number-input, .message-input{
 	width: 100%;
+}
+.submit{
+	text-align: center;
+	/* margin-left: 10%; */
+}
+.submit:hover{
+	cursor: pointer;
 }
 .message-input{
 	height: 100px;
@@ -29,10 +58,16 @@ form{
 	margin-right: none;
 	width: 100%;
 }
+.time-input{
+	width: 130px;
+}
+.date-time{
+	margin-left: 8%;
+}
 .email, .phone-number, .message{
-	width: 100%;
+	width: 94%;
 	border-radius: 2px;
-	border-color: none;
+	border-color: solid white;
 	/* solid white */
 	/* border: 1px solid #ccc; */
 }
@@ -67,6 +102,7 @@ a.fill-div {
 	height: 100;
 	margin-left: 5% ;
 	border-radius: 15px;
+	background-image: linear-gradient(to bottom right, #65dfb4, #00e5ff);
 }
 .container-child:hover {
   box-shadow: 0 0 40px rgba(33,33,33,.2); 

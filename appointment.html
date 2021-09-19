@@ -6,11 +6,16 @@
     <title>Book an appointment</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-		<h1>Book an appointment</h1>
-    <h2>A Premier Telehealth Master<h2>
-    <h3>Welcome Mr XY<h3>
-		<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfarA1s27CnCfMnrFwa3UGtDvfUtyzzmomtjHDJI6CASBMY6A/formResponse" method="post">
+  <body style="text-align:center">
+		<div style="display:felx; position:inline; text-align:center;">
+			<image src="Screenshot_18.png" width="90px">
+			<h2>A Premier Telehealth Master<h2>
+			<h3>Welcome Mr XY<h3>
+		</div>
+		<div class="form-contents">
+		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+		<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfarA1s27CnCfMnrFwa3UGtDvfUtyzzmomtjHDJI6CASBMY6A/formResponse" method="post" id="contact_us" target="hidden_iframe" onsubmit="clearForm()" style="justify-content: center; transform: translateX(136%);">
+		<div class="header-form">Book An Appointment</div>
 			<div class="name">
 				<div class="first-name">
 					<input type="text" class="first-name-input" name="entry.293999880" placeholder="First Name" required>
@@ -26,7 +31,6 @@
 				<input type="text" class="phone-number-input" name="entry.2031689518" placeholder="Phone Number" required>
 			</div>
 			<div class="date-time">
-				<!-- <label class="label-date-time">Date & Time</label> -->
 				<div class="date">
 					<input type="date" class="date-input" name="entry.443548028" required>
 				</div>	
@@ -38,7 +42,9 @@
 				<textarea id="message" class="message-input" name="entry.184335092" placeholder="What Seems to be the problem?" rows="10" cols="92" required></textarea>
 			</div>
 			<input type="submit" class="submit">
+			
 		</form>
+		</div>
 		<div>
 		<a href="index.html">Back</a>
     </div>
